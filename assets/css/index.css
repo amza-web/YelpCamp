@@ -56,7 +56,8 @@ main{
 }
 .lft{
     flex: 1;
-    margin: 40px 150px;
+    padding: 40px 150px;
+    background-color: #f9f6f1
 }
 .inn{    
     margin-top: 125px;
