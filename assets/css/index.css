@@ -7,6 +7,7 @@
 html{
     font-size: 18px;
     color: #6b7280;
+    background-color: #f9f6f1;
 }
 body{
     height: 100vh;
@@ -81,13 +82,17 @@ main{
 .img-row{
     max-height: 42px;
     display: flex;
+    flex-wrap: wrap;
     gap: 24px;
     margin-top: 7px;
 }
 .mt-only{
     display: none;
     width: 100%;
-    height: 100%;
+    margin-bottom: 2rem;
+    background-image: url("../img/Hero\ Image\ \(Tablet\ and\ Mobile\).jpg");
+    background-size: cover;
+    background-position: center bottom;
 }
 
 
@@ -96,9 +101,14 @@ main{
     body{
         overflow: scroll;
     }
-    
+    h1{
+        font-size: 56px;
+    }
     main{
         height: auto;
+    }
+    .logo{
+        padding: 2rem 2.5rem;
     }
     .rgh{
         display: none;
@@ -108,22 +118,30 @@ main{
     }
     .mt-only{
         display: block;
+        min-height: 37vh;
     }
     .inn{
-        margin: 0px 14px;
+        margin: 0px 2.5rem;
     }
 }
 @media screen and (max-width: 768px){
     body{
         overflow: scroll;
     }
+    h1{
+        font-size: 38px;
+    }
     main{
         height: auto;
+    }
+    .logo{
+        padding: 2rem 1rem;
     }
     .lft{
         padding: 0px;
     }
     .mt-only{
         display: block;
+        min-height: 40vh;
     }
 }
