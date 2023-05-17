@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Archivo', sans-serif;
+    font-size: 18px;
+    color: #6b7280;
+    font-weight: 500;
+}
+h1,h2,h3,h4,h5,h6{
+    color: #000000;
+}
+h1{
+    font-size: 56px;
+    word-spacing: 0.2rem;
+}
+p{    
+    line-height: 1.5;
+}
+
+/* Generall Styling */
+.btn{
+    color: currentColor;
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+    
+
+}
+.btn.primary{
+    color: #fff;
+    background-color: #000000;
+    padding: 1.2rem 1.4rem;
+    margin: 14px 0px;
+    border-radius: 4px;
+}
+.ctn-mx{
+    max-width: 1440px;
+}
