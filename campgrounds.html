@@ -9,20 +9,126 @@
     <title>YelpCamp | Campgrounds</title>
 </head>
 <body>
+    <div class="not">
+        <p>This Project was made by <a href="https://github.com/amza-web">Amza Omiteru</a> and designed by <a href="https://www.codewell.cc/challenges/yelpcamp-by-colt-steele--6144c7c8a383e41090a3d84b">Codewell</a></p>
+        <button id="close">
+            <img src="assets/img/Close.svg" alt="Close Button">
+        </button>
+    </div>
     <div class="ctn-mx">
         <header>
-        
-            <div></div>
-            <div></div>
-        
+            <nav class="nav">
+                <ul>
+                    <div class="grp">
+                        <li class="logo-ctn"><a class="nav-link" href="index.html"><img src="assets/img/Logo.svg" alt="Logo"></a></li>
+                        <li class="mob-no"><a class="nav-link" href="campgrounds.html">Home</a></li>
+                    </div>
+                    <div class="grp">
+                        <li class="mob-no"><a href="login.html" class="nav-link">Login</a></li>
+                        <li class="mob-no"><a href="signup.html" class="nav-link btn primary">Create an account</a></li>
+                        <li class="mob-only">
+                            <button id="hamburger">
+                                <img src="assets/img/Hamburger Menu.svg" alt="">
+                            </button>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            
         </header>
+        <nav class="mob-only" id="menu">
+            <div>
+                <button id="closem">
+                    <img src="assets/img/Close.svg" alt="">
+                </button>
+            </div>
+            <ul>
+                <li><a href="campgrounds.html">Home</a></li>
+                <hr>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Create an account</a></li>
+            </ul>
+        </nav>
         <main>
         
             <section>
-                <h1>Test</h1>
+                <div class="content1">
+                    <h1>Welcome to YelpCamp!</h1>
+                    <p>View our hand-picked campgrounds from all over the world, or add your own.</p>
+                    <form action="">
+                        <div class="inp-grp">
+                            <img src="assets/img/Search Icon.svg" alt="">
+                            <input class="search-inp" type="text" name="q" id="search-bar" placeholder="Search for camps">
+                        </div>
+                        <input type="submit" value="Search" class="btn primary">
+                    </form>
+                    <a class="bl-a" href="#">Or add your own campground</a>
+                </div>
             </section>
             <section>
-                <h1>Test</h1>
+                
+                <div class="camps">
+                    <div class="camp-item">
+                        <div>
+                            <img src="assets/img/Camp Images/Compressed Images/Mount Ulap.jpg" alt="Mount Ulap">
+                        </div>
+                        <h4>Mount Ulap</h3>
+                        <p>One of the most famous hikes in Benguet is Mt Ulap in Itogon.</p>
+                        <div>
+                            <a href="#" class="btn secondary">Veiw Campground</a>
+                        </div>
+                    </div>
+                    <div class="camp-item">
+                        <div>
+                            <img src="assets/img/Camp Images/Compressed Images/Calaguas Island.jpg" alt="Mount Ulap">
+                        </div>
+                        <h4>Callagus Islands</h3>
+                        <p>A Paradise of islands that can rival the white sand beauty of Boracay.</p>
+                        <div>
+                            <a href="#" class="btn secondary">Veiw Campground</a>
+                        </div>
+                    </div>
+                    <div class="camp-item">
+                        <div>
+                            <img src="assets/img/Camp Images/Compressed Images/Onay Beach.jpg" alt="Mount Ulap">
+                        </div>
+                        <h4>Onay Beach</h3>
+                        <p>This is one of the best beach camping sites, beautiful and pristine.</p>
+                        <div>
+                            <a href="#" class="btn secondary">Veiw Campground</a>
+                        </div>
+                    </div>
+                    <div class="camp-item">
+                        <div>
+                            <img src="assets/img/Camp Images/Compressed Images/Seven Sisters Waterfall.jpg" alt="Mount Ulap">
+                        </div>
+                        <h4>Seven Sisters Waterfall</h3>
+                        <p>The Seven Sisters is the 39th tallest waterfall in Norway.</p>
+                        <div>
+                            <a href="#" class="btn secondary">Veiw Campground</a>
+                        </div>
+                    </div>
+                    <div class="camp-item">
+                        <div>
+                            <img src="assets/img/Camp Images/Compressed Images/Latik Riverside.jpg" alt="Mount Ulap">
+                        </div>
+                        <h4>Latik Riverside</h3>
+                        <p>Philippines is one of the most dazzling countries in all of Asia.</p>
+                        <div>
+                            <a href="#" class="btn secondary">Veiw Campground</a>
+                        </div>
+                    </div>
+                    <div class="camp-item">
+                        <div>
+                            <img src="assets/img/Camp Images/Compressed Images/Buloy Springs.jpg" alt="Mount Ulap">
+                        </div>
+                        <h4>Buloy Springs</h3>
+                        <p>This is one of the best beach camping sites, beautiful and pristine.</p>
+                        <div>
+                            <a href="#" class="btn secondary">Veiw Campground</a>
+                        </div>
+                    </div>
+                </div>
             </section>
         
         </main>
@@ -31,6 +137,24 @@
             <img src="assets/img/Logo.svg" alt="">
         
         </footer>
+        <script>
+            const closeBtn = document.querySelector('.not button#close')
+            const notification = document.querySelector('.not')
+            const menuCloseBtn = document.querySelector('#closem')
+            const menuOpenBtn = document.querySelector('#hamburger')
+
+
+            closeBtn.onclick = ()=>{
+                notification.remove()
+            }
+            menuCloseBtn.onclick = ()=>{
+                document.querySelector('#menu').classList.remove('show')
+            }
+            menuOpenBtn.onclick = ()=>{
+                document.querySelector('#menu').classList.add('show')
+            }
+            
+        </script>
     </div>
 </body>
 </html>
