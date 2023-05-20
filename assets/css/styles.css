@@ -104,6 +104,9 @@ footer{
     display: none;
 }
 
+.img{
+    width: 100%;
+}
 
 header{
     background-color: #fff;
@@ -148,6 +151,12 @@ header{
 }
 nav a:hover{
     color: #9E9E9E;
+}
+.icon-grp{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    line-height: 1.5;
 }
 
 

@@ -1,0 +1,21 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+main .content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 3.5rem;
+    border: 1px solid #9E9E9E;
+    border-radius: 7px;
+}
+.space-btw{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    color: #000;
+}
