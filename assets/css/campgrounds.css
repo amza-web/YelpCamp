@@ -101,13 +101,7 @@ form .btn{
         margin: 0px;
         margin-bottom: 18px;
     }
-    .not{
-        text-align: center;
-        padding: 0.5rem 1.5rem;
-    }
-    .nav .mob-no{
-        display: none;
-    }
+   
     
     .content1 form{
         display: block;
