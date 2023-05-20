@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="not">
+        <p>This Project was made by <a href="https://github.com/amza-web">Amza Omiteru</a> and designed by <a href="https://www.codewell.cc/challenges/yelpcamp-by-colt-steele--6144c7c8a383e41090a3d84b">Codewell</a></p>
+        <button id="close">
+            <img src="assets/img/Close.svg" alt="Close Button">
+        </button>
+    </div>
+    <div class="ctn-mx">
+        <header>
+            <nav class="nav">
+                <ul>
+                    <div class="grp">
+                        <li class="logo-ctn"><a class="nav-link" href="index.html"><img src="assets/img/Logo.svg" alt="Logo"></a></li>
+                        <li class="mob-no"><a class="nav-link" href="campgrounds.html">Home</a></li>
+                    </div>
+                    <div class="grp">
+                        <li class="mob-no"><a href="login.html" class="nav-link">Login</a></li>
+                        <!-- Loggged in
+                        <li class="mob-no"><b>John Doe</b></li> -->
+                        <li class="mob-no"><a href="signup.html" class="nav-link btn primary">Create an account</a></li>
+                        <!-- Loggged in
+                        <li class="mob-no"><a href="campgrounds.html" class="nav-link">Logout</a></li> -->
+                        <li class="mob-only">
+                            <button id="hamburger">
+                                <img src="assets/img/Hamburger Menu.svg" alt="">
+                            </button>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            
+        </header>
+        <nav class="mob-only" id="menu">
+            <div>
+                <button id="closem">
+                    <img src="assets/img/Close.svg" alt="">
+                </button>
+            </div>
+            <ul>
+                <li><a href="campgrounds.html">Home</a></li>
+                <hr>
+                <li><a href="login.html">Login</a></li>
+                <!-- Loggged in
+                <li><b>John Doe</b></li> -->
+                <li><a href="signup.html">Create an account</a></li>
+                <!-- Loggged in
+                <li><a href="campgrounds.html">Logout</a></li> -->
+            </ul>
+        </nav>
+        
+        <!-- Main -->
+        <main>
+
+        </main>
+        <!-- End -->
+
+        <footer>
+        
+            <img src="assets/img/Logo.svg" alt="">
+        
+        </footer>
+        <script>
+            const closeBtn = document.querySelector('.not button#close')
+            const notification = document.querySelector('.not')
+            const menuCloseBtn = document.querySelector('#closem')
+            const menuOpenBtn = document.querySelector('#hamburger')
+
+
+            closeBtn.onclick = ()=>{
+                notification.remove()
+            }
+            menuCloseBtn.onclick = ()=>{
+                document.querySelector('#menu').classList.remove('show')
+            }
+            menuOpenBtn.onclick = ()=>{
+                document.querySelector('#menu').classList.add('show')
+            }
+            
+        </script>
+    </div>
+</body>
+</html>
